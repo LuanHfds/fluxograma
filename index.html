@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANTOS FC - Jornada Alvinegra</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Cabeçalho -->
+        <header class="app-header">
+            <div class="logo-area">
+                <h1>SANTOS <span class="highlight">FC</span></h1>
+                <p>Jornada Alvinegra Interativa</p>
+            </div>
+            <div class="progress-badge">
+                Questão <span id="current-q">1</span> de 10
+            </div>
+        </header>
+
+        <!-- Área de Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Painel de Pergunta -->
+            <section class="question-panel" id="question-panel">
+                <h2 id="question-title">Carregando pergunta...</h2>
+                <div class="options-container" id="options-container">
+                    <!-- Botões injetados via JS -->
+                </div>
+            </section>
+
+            <!-- Painel do Fluxograma Visual -->
+            <section class="flowchart-panel">
+                <h3>Fluxograma da sua Trajetória</h3>
+                <div class="flowchart-scroll" id="flowchart-container">
+                    <!-- Nós do fluxograma injetados dinamicamente -->
+                    <div class="flowchart-placeholder">Responda à primeira pergunta para iniciar o fluxograma...</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé / Ações -->
+        <footer class="app-footer">
+            <button id="restart-btn" class="btn-santos secondary" style="display: none;">Reiniciar Jornada</button>
+            <p>Memória e Tradição | O Maior da Terra</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
